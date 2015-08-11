@@ -1,0 +1,145 @@
+
+body {
+	margin: 0;
+	min-width: 1480px;
+}
+
+.container {
+	width: 1480px;
+	margin: 0 auto;
+}
+
+.row_home {
+	min-height: 800px;
+	color: #FFF;
+	background-color: #1E3348;
+	background-image: url(../imgs/home-bg.jpg);
+	border-bottom: solid 5px #4CCBFF;
+}
+
+.logo {
+	margin-left: 10%;
+	margin-top: 15px;
+	width: 10%;	
+}
+
+nav {
+	height: 100px;	
+	background-color: #142333;
+	-moz-opacity: 0.8;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+
+.navigation {
+	margin-left: 20%;
+    color: #FFF;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+}
+.menu {
+	list-style: outside none none;
+	padding-left: 0;
+	
+}
+
+.menu a, .menu a:visited, .menu a:hover, .menu a:active {
+	text-decoration: none;
+}
+
+.menu_item {
+	display: inline-block;
+	margin-right: 20px;
+	padding-top: 37px;
+	margin-top: -37px;
+	margin-bottom: 0;
+	color: #FFF;
+}
+
+.menu_item_active {
+	color: #4BCAFF;
+	border-top: solid 2px #4BCAFF;
+}
+
+.home_main {
+	position: absolute;
+	top: 200px;
+	height: 600px;
+	width: 1480px;
+}
+
+.home_main_pic {	
+	width: 40.8%;
+	display: inline-block;
+}
+
+#hand_phone_img {
+	width: 100%;
+}
+
+.home_main_conent {
+	display: inline-block;	
+	padding-left: 40px;
+	padding-right: 10%;
+	position: absolute;
+	top: 125px;
+}
+
+.home_main_conent h1 {
+	font-weight: normal;
+}
+
+.home_content_button {
+	width: 200px;
+	height:50px;
+	color: #FFF;
+	border: solid 1px #FFF;
+	border-radius: 10px;
+	background-color: transparent;
+	text-transform: uppercase;
+	margin-top: 30px;
+	margin-right: 50px;
+	cursor: pointer;
+}
+
+.home_main_content_mob_buttons {
+	margin-top: 50px;
+}
+
+.home_main_content_buttons_form{
+	display: inline-block;
+}
+
+.home_content_round_btn {
+	width: 60px;
+	height:60px;
+	color: #FFF;
+	border: solid 1px #FFF;
+	border-radius: 30px;
+	background-color: transparent;		
+	margin-left: 50px;
+	cursor: pointer;
+}
+
+.home_right_left {
+	position: absolute;
+	width: 1480px;
+	top: 47%;
+}
+
+.home_content_round_btn_left {
+	position: absolute;
+	left: 60px;
+}
+
+.home_content_round_btn_right {
+	position: absolute;
+	right: 100px;
+}
+
+.row_features {
+	min-height: 300px;
+	background-color: #F9F9F9;
+}
