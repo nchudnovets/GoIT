@@ -1,7 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
 
 body {
 	margin: 0;
 	min-width: 1480px;
+	font-family: 'Lato', sans-serif;
+}
+
+.thin_text {
+	font-weight: 300;
 }
 
 .container {
@@ -71,7 +77,7 @@ nav {
 }
 
 .home_main_pic {	
-	width: 40.8%;
+	width: 40.6%;
 	display: inline-block;
 }
 
@@ -105,7 +111,7 @@ nav {
 }
 
 .home_main_content_mob_buttons {
-	margin-top: 50px;
+	margin-top: 50px;	
 }
 
 .home_main_content_buttons_form{
@@ -115,29 +121,96 @@ nav {
 .home_content_round_btn {
 	width: 60px;
 	height:60px;
-	color: #FFF;
-	border: solid 1px #FFF;
+	color: #FFF;	
+    padding-top: 1px;
+    padding-left: 8px;
+	border: solid 1px transparent;
 	border-radius: 30px;
-	background-color: transparent;		
-	margin-left: 50px;
-	cursor: pointer;
+	background-color: #17191E;
+	-moz-opacity: 0.8;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	margin-left: 20px;
+	cursor: pointer;	
+	background-position: 50%, 50%;
+	background-repeat: no-repeat;
+}
+
+.home_content_round_btn_apple {
+	background-image: url(../imgs/apple.png);
+}
+
+.home_content_round_btn_apple:hover,
+.home_content_round_btn_apple:active,
+.home_content_round_active_btn {
+	background-image: url(../imgs/apple_blue.png);
+}
+
+.home_content_round_btn_android {
+	background-image: url(../imgs/android.png);
+}
+
+.home_content_round_btn_android:hover,
+.home_content_round_btn_android:active {
+	background-image: url(../imgs/android_blue.png);
 }
 
 .home_right_left {
 	position: absolute;
 	width: 1480px;
-	top: 47%;
+	top: 30%;	
 }
 
 .home_content_round_btn_left {
 	position: absolute;
-	left: 60px;
+	top: 0;
+	left: 55px;
+	background-color: #233A4E;
+	padding-top: 0;
+    padding-left: 6px;
 }
 
 .home_content_round_btn_right {
 	position: absolute;
-	right: 100px;
+	top:0;
+	right: 75px;
+	background-color: #233A4E;
+	padding-top: 0;
+    padding-left: 6px;
 }
+
+.home_controls {
+	position: absolute;
+	left: 690px;
+	bottom: 40px;
+}
+
+.home_control {
+	display: inline-block;
+	width: 20px;
+	height:20px;
+	color: transparent;	    
+	border: solid 1px #FFF;
+	border-radius: 10px;
+	background-color: transparent;	
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.home_content_round_btn_left:hover,
+.home_content_round_btn_left:active,
+.home_content_round_btn_right:hover,
+.home_content_round_btn_right:active,
+.home_control:active,
+.home_content_button:hover,
+.home_content_button:active,
+.home_content_button_active,
+.home_content_round_btn_right_active,
+.home_control_active {
+	background-color: #4BCAFF;
+	border-color: #4BCAFF;
+}
+
 
 .row_features {
 	min-height: 300px;
