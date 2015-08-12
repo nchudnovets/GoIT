@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<meta charset="utf-8">
+		<title>Занятие 2. Задание 1.</title>
+	</head>
+	
+	<body>
+		<h1>Семантические тэги.</h1>
+		
+		<h2> Просто текст.</h2>
+		<p>
+			<dfn>Тег</dfn> - элемент HTML, представляющий из себя текст, заключенный в угловые скобки. 
+			Тег является активным элементом, изменяющим представление следующей за ним информации. <br /> 
+			Тег может иметь некоторое количество атрибутов. Обычно используются два тега - открывающий и закрывающий.
+		</p>
+		<p>
+			Обозначить ошибку в тексте можно тегом del (по умолчанию он будет перечеркнут), <br />
+			вот так: <br />
+			<del>перечеркнутый текст</del><br />
+			а вставленный текст — тегом ins (обозначается подчеркиванием), вот так: <br />
+			<ins>вставленный текст</ins><br />
+		</p>
+		<p>
+			Несмотря на то, что это строчные теги (не разрывают строки), внутри них допускается размещение блочных элементов. <br />
+			Например, перечеркнутый абзац: <br />
+			<del>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam incidunt officia vitae mollitia amet dolores ut modi, <br />
+				autem obcaecati deleniti, minima quos asperiores qui quidem harum! Consequuntur molestias, modi sunt!
+			</del><br />
+			Или вставленный абзац: <br />
+			<ins>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur unde cum, vel eos quam fugit ipsum voluptates architecto. <br />
+				Voluptatum deleniti voluptate unde, ratione aspernatur consectetur ut repudiandae, quasi quo nulla.
+			</ins>			
+		</p>
+		
+		<h2> Адрес.</h2>
+		<p>
+			Ежели, к примеру, вы гостей любите принимать точаще, то есть смысл на своей странице оставить адрес и другие контактные данные. <br />
+			для этого и тэг специальный есть. Иоформляется это дело таким вот образом:
+			<address>
+				Крайняя хижина у большого дерева, как бежать с горы на восход солнца. Там еще стена такая синяя.
+			</address>
+		</p>
+		
+		<h2> Цитаты.</h2>
+		<p> Короткую цитату можно оформить таким образом:</p>		
+		<p>
+			<q>Богу угодно качество нашего труда, а не его количество.</q><em>Моханда́с Карамча́нд «Маха́тма» Га́нди</em><br />		
+			<cite><a href="http://zitata.com/gandi/">http://zitata.com</a></cite>
+		</p>
+		<p>
+			А <mark> длинную лучше вот так:</mark>
+			<blockquote cite = "http://zitata.com/gandi/">
+				Для того чтобы созерцать всеобщий и вездесущий дух истины, надо уметь любить презреннейшее создание — самого себя. <br />
+				И человек,. стремящийся к этому, не может позволить себе устраниться от какой бы то ни было сферы жизни.<br />
+				<em>Моханда́с Карамча́нд «Маха́тма» Га́нди</em><br />		
+				<cite><a href="http://zitata.com/gandi/">http://zitata.com</a></cite>
+			</blockquote>
+		</p>
+		<h2> Немного кода.</h2>
+		<p> Если на страницу нужно вывести исходник <abbr title="Hyper Text Markup Language">HTML</abbr> кода, то следует оформить это вот так:</p>
+		<code>
+			&lt;!DOCTYPE html&gt;<br />
+			&lt;html&gt;<br />
+			 &lt;head&gt;<br />
+			  &lt;meta charset="utf-8"&gt;<br />
+			  &lt;title&gt;Тег VAR&lt;/title&gt;<br />
+			 &lt;/head&gt;<br />
+			 &lt;body&gt; <br />
+			<br />
+			 &lt;p&gt;В данном примере делается запрос к базе данных для получения поля &lt;var&gt;content_title&lt;/var&gt; <br />
+			  из таблицы &lt;var&gt;content&lt;/var&gt;, причем должно удовлетворяться условие <br />
+			  &lt;code&gt;section_id = 1&lt;/code&gt;.&lt;/p&gt;<br />
+			<br />
+			 &lt;/body&gt;<br />
+			&lt;/html&gt;
+		</code>
+		<p>
+			Если не сконвертировать угловые скобки в ascii знаки, то результатом вывода будет лишь текст абзаца:
+			<blockquote>
+				<samp>
+					<p>В данном примере делается запрос к базе данных для получения поля <var>content_title</var> 
+					  из таблицы <var>content</var>, причем должно удовлетворяться условие 
+					  <code>section_id = 1</code>.
+					</p>
+				</samp>
+			</blockquote>
+		</p>
+	</body>
+</html>
+
