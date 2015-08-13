@@ -262,6 +262,7 @@ nav {
 
 .feature h4 {
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .feature p {
@@ -297,16 +298,22 @@ nav {
 	background-image: url(../imgs/customize.png);
 }
 
-.feature_icon:hover,
-.feature_icon:focus,
-.feature_icon:active {
+.feature_changable {
+	width: 170px;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+.feature_changable:hover .feature_icon,
+.feature_changable:active .feature_icon,
+.feature_changable:focus .feature_icon {
 	background-color: #404042;
 	border-color: #404042;
 }
 
-.feature_icon:hover .change_color,
-.feature_icon:focus .change_color,
-.feature_icon:active .change_color {
+.feature_changable:hover .change_color,
+.feature_changable:active .change_color,
+.feature_changable:focus .change_color {
 	color: #4BCAFF;
 }
 
