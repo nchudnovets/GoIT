@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
 body {
@@ -33,6 +33,12 @@ h2 {
 
 .nomargin {
 	margin: 0;
+}
+
+.block_head {
+	text-transform: lowercase;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* HOME BLOCK */
@@ -249,12 +255,6 @@ nav {
 	padding-bottom: 50px;
 }
 
-.features_head {
-	text-transform: lowercase;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .features_content {
 	margin: 50px 50px 0 50px;
 }
@@ -340,12 +340,6 @@ nav {
 	background-color: #FFF;	
 }
 
-.gallery_head {
-	text-transform: lowercase;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .gallery_content {
 	margin: 60px 50px 120px 50px;
 }
@@ -379,11 +373,6 @@ nav {
 	text-transform: uppercase;
 	font-weight: 900;
 }
-
-
-
-
-
 
 
 
@@ -431,4 +420,104 @@ nav {
 	text-align: left;
 	padding: 0 70px;
 }
+
+
+
+/* PRICES BLOCK */
+
+.row_prices {
+	min-height: 350px;
+	text-align: center;	
+	background-color: #FFF;	
+}
+
+.price_block {
+	display: inline-block;
+	width: 250px;
+	height: 350px;
+	border: solid 1px #dfdad4;
+	background-color: #F9F9F9;
+	margin: 50px 50px 100px 50px;	
+	color: #dfdad4;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+
+.price_block:hover,
+.price_block:focus {
+	transform: scale(1.15, 1.15);	
+}
+
+.package_name p {
+	text-transform: uppercase;
+}
+
+.package_price {	
+	font-size: 300%;
+	color: #FFF;
+	font-weight: 900;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.package_price p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.package_basic .package_price {
+	background-color: #92c46b;
+}
+
+.package_basic .buy_btn {
+	background-color: #92c46b;
+}
+
+.package_basic:hover,
+.package_basic:focus {
+	color: #92c46b;
+}
+
+.package_prof .package_price {
+	background-color: #4bcaff;
+}
+
+.package_prof .buy_btn {
+	background-color: #4bcaff;
+}
+
+.package_prof:hover,
+.package_prof:focus {
+	color: #4bcaff;
+}
+
+.package_advanced .package_price {
+	background-color: #fe7c00;
+}
+
+.package_advanced .buy_btn {
+	background-color: #fe7c00;
+}
+
+.package_advanced:hover,
+.package_advanced:focus {
+	color: #fe7c00;
+}
+
+.package_description {
+	margin-top: 30px;
+	height: 150px;
+}
+
+.buy_btn {
+	width: 150px;
+	height: 30px;
+	color: #FFF;
+	text-transform: uppercase;
+	border: none;		
+}
+
+
+
+
 
