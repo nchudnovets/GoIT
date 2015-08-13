@@ -69,7 +69,7 @@ nav {
 	
 }
 
-.menu a, .menu a:visited, .menu a:hover, .menu a:active {
+.menu a, .menu a:visited, .menu a:hover, .menu a:active, .menu a:focus {
 	text-decoration: none;
 }
 
@@ -83,6 +83,8 @@ nav {
 }
 
 .menu_item:hover,
+.menu_item:active,
+.menu_item:focus,
 .menu_item_active {
 	color: #4BCAFF;
 	border-top: solid 2px #4BCAFF;
@@ -158,6 +160,7 @@ nav {
 
 .home_content_round_btn_apple:hover,
 .home_content_round_btn_apple:active,
+.home_content_round_btn_apple:focus,
 .home_content_round_active_btn {
 	background-image: url(../imgs/apple_blue.png);
 }
@@ -167,6 +170,7 @@ nav {
 }
 
 .home_content_round_btn_android:hover,
+.home_content_round_btn_android:focus,
 .home_content_round_btn_android:active {
 	background-image: url(../imgs/android_blue.png);
 }
@@ -215,11 +219,14 @@ nav {
 
 .home_content_round_btn_left:hover,
 .home_content_round_btn_left:active,
+.home_content_round_btn_left:focus,
 .home_content_round_btn_right:hover,
 .home_content_round_btn_right:active,
+.home_content_round_btn_right:focus,
 .home_control:active,
 .home_content_button:hover,
 .home_content_button:active,
+.home_content_button:focus,
 .home_content_button_active,
 .home_content_round_btn_right_active,
 .home_control_active {
@@ -268,9 +275,49 @@ nav {
 	border: solid 1px #4BCAFF;
 	border-radius: 80px;
 	margin: 0 auto;
-	background-color: #4BCAFF;
-	background-image: url();
+	background-color: #4BCAFF;	
 	background-position: 50%, 50%;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
+
+.feature_icon_layout {
+	background-image: url(../imgs/layout.png);
+}
+
+.feature_icon_design {
+	background-image: url(../imgs/design.png);
+}
+
+.feature_icon_multi {
+	background-image: url(../imgs/multipurpose.png);
+}
+
+.feature_icon_customize {
+	background-image: url(../imgs/customize.png);
+}
+
+.feature_icon:hover,
+.feature_icon:focus,
+.feature_icon:active {
+	background-color: #404042;
+	border-color: #404042;
+}
+
+.feature_icon:hover .change_color,
+.feature_icon:focus .change_color,
+.feature_icon:active .change_color {
+	color: #4BCAFF;
+}
+
+.feature_active .feature_icon {
+	background-color: #404042;
+	border-color: #404042;
+}
+
+.feature_active .change_color {
+	color: #4BCAFF;	
+}
+
+
 
