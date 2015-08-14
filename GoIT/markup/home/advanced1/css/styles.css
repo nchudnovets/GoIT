@@ -61,6 +61,8 @@ nav {
 	height: 100px;	
 	background-color: #142333;
 	-moz-opacity: 0.8;
+	-webkit-opacity: 0.8;
+	-o-opacity: 0.8;
 	filter: alpha(opacity=80);
 	opacity: 0.8;
 }
@@ -364,6 +366,8 @@ nav {
 	height: 40px;
 	background-color: #4d4d4f;
 	-moz-opacity: 0.6;
+	-webkit-opacity: 0.6;
+	-o-opacity: 0.6;
 	filter: alpha(opacity=60);
 	opacity: 0.6;
 	color: #4BCAFF;
@@ -441,11 +445,16 @@ nav {
 	color: #dfdad4;
 	padding-bottom: 20px;
 	cursor: pointer;
+	transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .price_block:hover,
 .price_block:focus {
-	transform: scale(1.15, 1.15);	
+	transform: scale(1.15, 1.15);
+	
 }
 
 .package_name p {
