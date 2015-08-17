@@ -14,7 +14,7 @@
 					<div class="navigation">
 						<ul class="menu">
 							<a href="#home">
-								<li class="menu_item menu_item_active">home</li>   <!--Спросить! Не центрируется нормально по верху блока -->
+								<li class="menu_item menu_item_active">home</li>
 							</a>
 							<a href="#features">
 								<li class="menu_item">features</li>
@@ -56,28 +56,28 @@
 						</div>
 						
 						<div class="home_main_content_buttons">
-							<form action="#" class="home_main_content_buttons_form">
+							<div class="home_main_content_buttons_form">
 								<button type="submit" class="home_content_button">
 									download
 								</button>
-							</form>
+							</div>
 							
-							<form action="#" class="home_main_content_buttons_form">
+							<div class="home_main_content_buttons_form">
 								<button class="home_content_button home_content_button_active">
 									learn more
 								</button>
-							</form>
+							</div>
 						</div>
 						
 						<div class="home_main_content_mob_buttons">
 							Availabale on:
-							<form action="#" class="home_main_content_buttons_form">
+							<div class="home_main_content_buttons_form">
 								<button class="home_content_round_btn home_content_round_btn_apple home_content_round_active_btn">
 									<!-- background image in css -->
 								</button>
-							</form>
+							</div>
 							
-							<form action="#" class="home_main_content_buttons_form">
+							<form class="home_main_content_buttons_form">
 								<button class="home_content_round_btn home_content_round_btn_android">
 									<!-- background image in css -->
 								</button>
@@ -93,16 +93,16 @@
 					</div>
 					
 					<div class="home_right_left">
-						<form action="#" class="home_main_content_buttons_form">
+						<div class="home_main_content_buttons_form">
 							<button class="home_content_round_btn home_content_round_btn_left">
 								<
 							</button>
-						</form>
-						<form action="#" class="home_main_content_buttons_form">
+						</div>
+						<div class="home_main_content_buttons_form">
 							<button class="home_content_round_btn home_content_round_btn_right home_content_round_btn_right_active">
 								>
 							</button>
-						</form>
+						</div>
 					</div>					
 				
 				</div>
@@ -299,19 +299,61 @@
 			</div>
 			
 			<div class="row row_testimonials" id="testimonials">
-			
+				<div class="block_head testimonials_head">
+					<h2>testimonials</h2>				
+				</div>
+				<div class="testimonials_content">
+					<div class="user_photo">
+						<div class="user_photo_border_crcl">
+						</div>
+					</div>
+					<div class="testimonial_text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+						Eligendi molestiae autem vero quae delectus repellendus facilis adipisci sint esse doloremque, 
+						laborum, dolores et voluptate reiciendis, ea quam culpa voluptatum eum.
+						<span class="testimonial_who testimonil_name">Jhon Doe</span>
+						<span class="testimonial_who testimonil_company">from some company</span>
+					</div>
+					<div class="testimonial_controls">
+						<div class="testimonial_control testimonial_control_active"></div>
+						<div class="testimonial_control"></div>
+						<div class="testimonial_control"></div>
+					</div>
+				</div>
 			</div>
 			
 			<div class="row row_download" id="download">
-			
+				<div class="download_head">
+					<h2>Do you Like this App?</h2>				
+				</div>
+				<div class="download_content">
+					<button class="download_btn">download now
+					</button>
+				</div>
 			</div>
 			
-			<div class="row row_contact" id="contact">
-			
+			<div class="row_contact" id="contact">
+				<div class="contact_contact_form">
+					<h2>contact</h2>
+					<form action="#">
+						<p><input type="text" placeholder="Your name" /></p>
+						<p><input type="email" placeholder="Your email" /></p>
+						<p><input type="text" placeholder="Subject" /></p>
+						<p><textarea name="comment" placeholder="Message"></textarea></p>
+						<p><input type="submit" value="Send"/></p>
+					</form>
+				</div>
 			</div>
 			
 			<footer>
-				
+				<div class="footer_content">
+					<div class="footer_content_left">
+						Copyright &copy; 2013 | bazinger | All Rights Reserved
+					</div>
+					<div class="footer_content_right">
+						Terms of Service | Privacy Policy
+					</div>
+				</div>
 			</footer>
 		
 		</div>		
