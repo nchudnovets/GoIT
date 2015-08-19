@@ -1,0 +1,28 @@
+
+nav {
+	background-color: #A64DFF;
+	line-height: 1.7;
+	text-transform: uppercase;
+	font-family: Impact;
+	font-size: 1.5em;
+}
+
+.navigation {
+	width: 900px;
+	margin: 0 auto;
+	list-style: none;
+	color: #FFF;
+}
+
+.navigation li {
+	display: inline-block;
+	padding: 0 25px;
+	cursor: pointer;
+}
+
+.navigation li:hover,
+.navigation li:focus {	
+	background-color: #EEEEEE;
+	color: #A8A4A1;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
