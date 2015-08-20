@@ -12,6 +12,7 @@ nav {
 	margin: 0 auto;
 	list-style: none;
 	color: #FFF;
+	transform: scaleY(1.3);	
 }
 
 .navigation li {
@@ -25,4 +26,5 @@ nav {
 	background-color: #EEEEEE;
 	color: #A8A4A1;
 	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	line-height: 1.3;
 }
