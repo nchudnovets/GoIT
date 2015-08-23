@@ -1,0 +1,103 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+
+.item_box {
+	width: 295px;
+	border: solid 3px #EE8129;
+	border-radius: 5px;
+	text-align: center;	
+	margin: 50px auto;	
+	box-shadow: -2px 2px 5px 2px rgba(224,238,245,1),
+				2px -2px 5px 2px rgba(224,238,245,1);
+	font-family: 'PT Sans', sans-serif;
+}
+
+.row_head,
+.features button {
+	background-color: #EE8129;
+	color: #FFF;
+}
+
+.row_head,
+.features button,
+.row_price p:first-of-type {
+	text-transform: uppercase;
+	font-size: 140%;
+}
+
+.row_head {
+	padding: 5px 0;
+	font-weight: 700;
+}
+
+.row_price p {
+	margin: 15px 0 0 0;
+}
+
+.num:before {
+	content: "$";
+	vertical-align: top;
+	font-size: 35%;
+	font-weight: 400;
+}
+
+.num {
+	font-size: 400%;
+	font-weight: 700;
+}
+
+.period {
+	text-transform: capitalize;
+}
+
+.period {
+	vertical-align: sub;
+	text-transform: capitalize;
+}
+
+.features {
+	padding: 0 15px;
+}
+
+.features ul {
+	padding: 0;
+}
+
+.features ul li {
+	content: "";
+	background-image: url(bul.png);
+	background-repeat: no-repeat;
+	background-position: 30px, 4px;
+}
+
+.features ul li {
+	text-align: left;
+	list-style: none;
+	color: #888C94;
+	padding: 5px 5px 5px 60px;
+	margin-top: 1px;
+}
+
+.features ul li:nth-child(odd) {
+	background-color: #EDF5FD;
+}
+
+.features ul li:nth-child(even) {
+	background-color: #F5F5F6;
+}
+
+.features button {
+	width: 260px;
+	height: 45px;
+	border: solid 1px #EE8129; 
+	border-bottom: solid 3px #B3560B;
+	border-radius: 7px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	font-size: 80%;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+.features button:active {
+	border-bottom: solid 3px #EE8129;
+}
