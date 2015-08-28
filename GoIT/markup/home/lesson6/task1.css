@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+
+.row_prices {
+	width: 900px;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #41525C;
+}
+
+.price_box {
+	display: inline-block;
+	width: 290px;		
+	text-align: center;	
+	margin: 20px auto;
+	border-radius: 7px;
+}
+
+.parice_box_active {
+	box-shadow: -2px 2px 5px 2px rgba(224,238,245,1),
+				2px -2px 5px 2px rgba(224,238,245,1);
+	transform: scale(1.03);
+}
+
+.price_box_standard .price_box_head {
+	background-color: #37C2D3;	
+}
+
+.price_box_ultimate .price_box_head {
+	background-color: #1CB79A;
+	color: #FFF;
+}
+
+.price_box_best_value .price_box_head {
+	background-color: #EE8129;
+}
+
+.price_box_head,
+.price_box_features button {
+	color: #FFF;
+}
+
+.row_prices h2,
+.price_box_head,
+.price_box_features button,
+.price_box_price p:first-of-type {
+	text-transform: uppercase;
+	font-size: 140%;
+}
+
+.row_prices h2 {
+	font-size: 200%;
+}
+
+.price_box_head {
+	padding: 5px 0;
+	font-weight: 700;
+	border: solid 1px #EAECEE;
+	border-radius: 7px 7px 0 0;
+}
+
+.price_box_content {
+	border: solid 1px #EAECEE;
+	border-radius: 0 0 7px 7px;	
+	background-color: #FFF;
+	margin-top: -1px;
+}
+
+.price_box_price p {
+	margin: 15px 0 0 0;
+	font-weight: 700;
+}
+
+.num:before {
+	content: "$";	
+	font-size: 35%;
+	font-weight: 400;
+	position: absolute;
+	left: -10px;
+	top: 7px;
+}
+
+.num {
+	position: relative;
+	font-size: 400%;
+	font-weight: 700;
+}
+
+.period {
+	vertical-align: sub;	
+}
+
+.price_box_features {
+	padding: 0 15px;
+}
+
+.price_box_features ul {
+	padding: 0;
+}
+
+.price_box_features ul li {
+	content: "";
+	background-image: url(imgs/bul.png);
+	background-repeat: no-repeat;
+	background-position: 30px, 4px;
+}
+
+.price_box_features ul li {
+	text-align: left;
+	list-style: none;
+	color: #888C94;
+	padding: 5px 5px 5px 60px;
+	margin-top: 1px;
+}
+
+.price_box_features ul li:nth-child(odd) {
+	background-color: #EDF5FD;
+}
+
+.price_box_features ul li:nth-child(even) {
+	background-color: #F5F5F6;
+}
+
+.price_box_features button {
+	width: 260px;
+	height: 45px;	
+	border-radius: 7px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	font-size: 80%;
+	font-weight: 900;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.price_box_standard button,
+.price_box_ultimate button {
+	background-color: #3371A6;	
+	border: solid 1px #3371A6; 
+	border-bottom: solid 3px #16436A;
+}
+
+.price_box_best_value button {
+	background-color: #EC8136;	
+	border: solid 1px #EE8129; 
+	border-bottom: solid 3px #B1561B;
+}
+
+.price_box_best_value button:active {
+	border-bottom: solid 3px #EE8129;
+}
+
+.price_box_standard button:active,
+.price_box_ultimate button:active {
+	border-bottom: solid 3px #3371A6;
+}
+
+.price_box_best_value .price_box_head,
+.price_box_best_value .price_box_content {
+	border: solid 3px #EC8136;
+}
