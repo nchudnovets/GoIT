@@ -4,7 +4,7 @@
 	width: 900px;
 	padding: 10px;
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Trebuchet MS,Lucida Grande,Tahoma,sans-serif;
 	color: #41525C;
 }
 
@@ -48,7 +48,7 @@
 	font-size: 140%;
 }
 
-.row_prices h2 {
+.row_prices h2 {	
 	font-size: 200%;
 }
 
@@ -96,6 +96,7 @@
 
 .price_box_features ul {
 	padding: 0;
+	font-family: Calibri,Lucida Grande,Tahoma,sans-serif;
 }
 
 .price_box_features ul li {
@@ -127,6 +128,7 @@
 	border-radius: 7px;
 	margin-top: 5px;
 	margin-bottom: 30px;
+	font-family: 'Open Sans', Tahoma, sans-serif;
 	font-size: 80%;
 	font-weight: 900;
 	letter-spacing: 2px;

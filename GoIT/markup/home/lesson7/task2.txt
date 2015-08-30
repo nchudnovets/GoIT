@@ -1,0 +1,2 @@
+Task 2 is a begining of project1.
+So it is placed to project1 folder.
