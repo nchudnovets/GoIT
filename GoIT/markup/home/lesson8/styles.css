@@ -1,0 +1,115 @@
+
+body {
+	font-family: arial, sans-serif;
+}
+
+p {
+	margin: 2px 0;	
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: dotted 1px;
+}
+
+button {
+	background: linear-gradient(to top, #CBCBCB, #FBFBFB);
+}
+
+.search_form {
+	position: relative;
+	width: 50%;
+	height: 45px;
+	background: #FFCD5D;
+	padding: 5px;
+	margin: 50px;
+}
+
+.search_form_gradient {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	background: linear-gradient(to top, #ECBC40, #F7E5B3);
+	margin-right: 0;
+}
+
+.resizable {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 95px;
+}
+
+.fixed_btn {
+	position: absolute;
+	top: 5px;	
+	right: 10px;
+}
+
+.fixed_chbx {
+	position: relative;
+	top: 5px;
+}
+
+.fixed_addition {
+	position: relative;
+	top: 25px;
+}
+
+input {
+	display: inline-block;
+}
+
+p,
+label,
+input[type="submit"] {
+	font-size: 0.9em;
+	font-weight: 600;	
+} 
+
+input[type="text"] {
+	width: 100%;
+}
+
+.search_form_simple::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	border: solid 27px transparent;
+	border-left: solid 20px #FFCD5D;
+}
+
+.search_form_gradient_addon {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	width: 20px;
+	background: linear-gradient(to top, #ECBC40, #F7E5B3);
+}
+
+.search_form_gradient_addon::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -20px;
+	border: solid 20px transparent;
+	border-bottom: solid 28px #FFF;
+}
+
+.search_form_gradient::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -40px;
+	border: solid 20px transparent;
+	border-top: solid 28px #FFF;
+}
+
