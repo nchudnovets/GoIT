@@ -14,13 +14,26 @@
 				</div>
 				<div class="box_navigation">
 					<nav>
-						<ul class="navigation">
+						<ul class="navigation navigation_wide">
 							<a href="#"><li class="navigation_item navigation_item_active">home</li></a>
 							<a href="#about"><li class="navigation_item">about</li></a>
 							<a href="#portfolio"><li class="navigation_item">portfolio</li></a>
 							<a href="#services"><li class="navigation_item">services</li></a>
 							<a href="#prices"><li class="navigation_item">pricing</li></a>
 							<a href="#contact"><li class="navigation_item">contact</li></a>
+						</ul>
+						
+						<ul class="navigation navigation_short">
+							<ul class="nav_first_row">
+								<a href="#"><li class="navigation_item navigation_item_active">home</li></a>
+								<a href="#about"><li class="navigation_item">about</li></a>
+								<a href="#portfolio"><li class="navigation_item">portfolio</li></a>
+							</ul>
+							<ul class="nav_second_row">
+								<a href="#services"><li class="navigation_item">services</li></a>
+								<a href="#prices"><li class="navigation_item">pricing</li></a>
+								<a href="#contact"><li class="navigation_item">contact</li></a>
+							</ul>
 						</ul>
 					</nav>
 				</div> <!-- end box_navigation -->
@@ -38,7 +51,7 @@
 					<div class="row_content about_content">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quas, illo odit facilis expedita aut, 
-							quaerat impedit dolorem ipsam quae, voluptatem cumque odio facere!
+							quaerat impedit dolorem ipsam quae.
 						</p>
 						<button>button name</button>
 					</div>
@@ -96,6 +109,36 @@
 			</section><!-- end services -->
 
 			<section><!-- portfolio -->
+				<div class="row row_portfolio" id="portfolio">
+					<div class="color_filter blue_filter">
+					</div> <!-- end blue_filter -->
+					
+					<div class="portfolio_head">
+						<h2>Lorem ipsum dolor sit amet, consec sit ame adipisicing elit lorem ipsum dolor sit am...</h2>
+					</div>
+					
+					<div class="portfolio_content">
+						<p> 
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo magnam error!
+						</p>
+						<p>	
+							<ul>
+								<li>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolore voluptate doloremque eveniet molestias, 
+									atque doloribus nihil sapiente, quod perferendis maxime iste qui repellendus soluta placeat! Assumenda maiores.
+								</li>
+								<li>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolore voluptate doloremque eveniet molestias, 
+									atque doloribus nihil sapiente, quod perferendis maxime iste qui repellendus soluta placeat! Assumenda maiores.
+								</li>
+								<li>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolore voluptate doloremque eveniet molestias, 
+									atque doloribus nihil sapiente, quod perferendis maxime iste qui repellendus soluta placeat! Assumenda maiores.
+								</li>
+							</ul>
+						</p>
+					</div>
+				</div>
 			</section><!-- end portfolio -->
 
 			<section><!-- pricing -->
@@ -177,8 +220,8 @@
 
 			<section><!-- testimonials -->
 				<div class="row row_testimonials">
-					<div class="color_filter testimonials_blue_filter">
-					</div> <!-- end testimonials_blue_filter -->
+					<div class="color_filter blue_filter">
+					</div> <!-- end blue_filter -->
 
 					<div class="row_head testimonials_head">
 						<h2><span class="orange_head">what</span> client says</h2>
@@ -200,7 +243,7 @@
 								</div>
 								<div class="testimonial_body_content">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat odit, 
-									voluptatum consectetur adipisicing consectetur.
+									voluptatum consectetur adipisicing.
 								</div>
 							</div>						
 						</div> <!-- end testimonial -->
@@ -220,7 +263,7 @@
 								</div>
 								<div class="testimonial_body_content">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat odit, 
-									voluptatum consectetur adipisicing consectetur.
+									voluptatum consectetur adipisicing.
 								</div>
 							</div>						
 						</div> <!-- end testimonial -->
@@ -230,10 +273,40 @@
 			</section> <!-- end testimonials -->
 
 			<section><!-- contact -->
+				<div class="row_contact" id="contact">
+					<div class="box_contact_body">
+						<div class="contact_address">
+							<p class="contact_location">
+								Iconic Graphics <br>
+								123 Main Street <br>
+								EastWest <br>
+								LHR 54500
+							</p>
+							<p class="contact_phone">
+								012.345.6789
+							</p>
+							<p class="contact_email">
+								info@iconicgraphics.com
+							</p>
+						</div>
+						
+						<div class="contact_socials">
+							<a href="#"><img class="contact_social_icons" src="imgs/facebook_logo.png" alt="facebook" /></a>
+							<a href="#"><img class="contact_social_icons" src="imgs/twitter_logo.png" alt="twitter" /></a>
+							<a href="#"><img class="contact_social_icons" src="imgs/linkedin_logo.png" alt="linkedin" /></a>
+						</div>
+					</div>
+					
+					<div class="box_map">
+					</div>
+				</div> <!-- end row_contact -->
 			</section> <!-- end contact -->
 
 			<footer>
+				<p>Copyright &copy; 2014. <span class="bold_text">Company name. </span>All rights reserved. </p>
+				<p>Designed by <a href="#">IconicGraphics.com</a></p>
 			</footer>
-		</div>
+		
+		</div> <!-- end container -->
 	</body>
 </html>
