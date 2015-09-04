@@ -1096,10 +1096,13 @@ footer a {
 		padding: 20px 10px 20px 30px;
 	}
 	
+	.services_box:hover .service_content {
+		transform: translate(0, -150px);
+		background: #fff;
+	}
+
+	.services_box:hover .service_icon {	
+		transform: translate(0, 50px) scale(1.5, 1.5);
+	}
 }
-
-
-
-
-
 
