@@ -64,7 +64,7 @@
 						<h2>Lorem Ipsum is simply dummy text of the printing</h2>
 					</div>
 					
-					<div class="row_services_conetnt">
+					<div class="row_services_content">
 						<div class="services_box">
 							<div class="service_icon srvice_protect_icon">
 							</div>
@@ -74,6 +74,11 @@
 									100% of customer funds are stored offline in secure cold storage. 
 									We offer two­ factor authentication on all accounts, 
 									mobile alerts and delayed withdrawals, and spending and transfer limits.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, blanditiis velit 
+									pariatur sunt veritatis fuga nisi soluta expedita nemo, harum repudiandae, aspernatur. 
+									Accusantium voluptatibus repudiandae, consectetur ipsam quaerat dignissimos, facere.
 								</p>
 							</div>
 						</div>
@@ -88,6 +93,11 @@
 									We offer two­ factor authentication on all accounts, 
 									mobile alerts and delayed withdrawals, and spending and transfer limits.
 								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, blanditiis velit 
+									pariatur sunt veritatis fuga nisi soluta expedita nemo, harum repudiandae, aspernatur. 
+									Accusantium voluptatibus repudiandae, consectetur ipsam quaerat dignissimos, facere.
+								</p>
 							</div>
 						</div>
 						
@@ -100,6 +110,11 @@
 									100% of customer funds are stored offline in secure cold storage. 
 									We offer two­ factor authentication on all accounts, 
 									mobile alerts and delayed withdrawals, and spending and transfer limits.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, blanditiis velit 
+									pariatur sunt veritatis fuga nisi soluta expedita nemo, harum repudiandae, aspernatur. 
+									Accusantium voluptatibus repudiandae, consectetur ipsam quaerat dignissimos, facere.
 								</p>
 							</div>
 						</div>
@@ -297,7 +312,7 @@
 						</div>
 					</div>
 					
-					<div class="box_map">
+					<div class="box_map" id="map">
 					</div>
 				</div> <!-- end row_contact -->
 			</section> <!-- end contact -->
@@ -308,5 +323,20 @@
 			</footer>
 		
 		</div> <!-- end container -->
+	
+		<!-- google maps script -->
+		<script>
+			var map;
+			function initMap() {
+			  map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 31.521234, lng: 74.404528},
+				zoom: 13
+			  });
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" 
+				async defer>
+		</script>
+
 	</body>
 </html>
