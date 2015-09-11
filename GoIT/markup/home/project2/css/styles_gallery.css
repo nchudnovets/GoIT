@@ -50,6 +50,7 @@ body {
 .gallery_body {	
 	max-width: 1180px;
 	margin: 75px auto 0 auto;
+	position: relative;
 }
 
 .gallery_img_thumb {
@@ -64,7 +65,7 @@ body {
 }
 
 .gallery_img_thumb_content img {
-	width: 360px;
+	width: 100%;
 }
 
 .gallery_img_thumb_hover_filter {
@@ -74,7 +75,7 @@ body {
 	bottom: 15px;
 	left: 15px;
 	background-color: rgba(37, 166, 247, 0.9);
-	transform: scale(-0.00001, -0.00001);	
+	transform: scale(0.00001, 0.00001);	
 }
 
 .gallery_img_thumb_btns {
@@ -116,12 +117,52 @@ body {
 	background-color: #25a6f7;
 } 
 
+.gallery_img_prview_filter {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.9);
+	display: none;
+}
 
+.gallery_img_prview_img {
+	border-style: solid;
+	border-width: 3px;
+	border-color: #999999;
+	background-color: #f4f4f4;	
+	position: fixed;
+	top: 200px;
+	margin: 0 auto;
+	display: none;
+}
 
+.gallery_img_prview_img_active {
+	display: block;
+	margin: 15px;
+}
 
+.gallery_img_prview_img img {
+	width: 100%;
+	min-width: 400px;
+	max-width: 1140px;
+	margin-bottom: -3px;
+}
 
+.gallery_img_prview_close_btn {
+	width: 40px;
+	height: 40px;
+	background: #25A4F4 url("../imgs/close_icon.png") no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+	position: absolute;
+	top: -23px;
+	right: 23px;
+}
 
-
-
+.gallery_img_prview_close_btn:hover {
+	background-color: #F74B21;
+}
 
 
