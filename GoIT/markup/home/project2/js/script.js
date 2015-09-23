@@ -5,6 +5,7 @@ var zoomImage = function() {
 	var zoomBtnId = this.getAttribute("id");
 	var prevewId = zoomBtnId + '_prev';
         document.getElementById(prevewId).className += ' gallery_img_prview_img_active';
+		document.getElementById(prevewId).style.animationPlayState = "running";
 		document.getElementById("paranja").style.display = "block";
 };
 

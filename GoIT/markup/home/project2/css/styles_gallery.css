@@ -135,12 +135,21 @@ body {
 	position: fixed;
 	top: 200px;
 	margin: 0 auto;
-	display: none;
+	display: none;	
+}
+
+@keyframes appear {
+	to {
+		transform: scale(1, 1);
+	}
 }
 
 .gallery_img_prview_img_active {
 	display: block;
 	margin: 15px;
+	transform: scale(0.000001, 0.000001);
+	animation: appear 0.4s linear 0.2s forwards;
+	animation-play-state: paused;
 }
 
 .gallery_img_prview_img img {
