@@ -8,7 +8,7 @@ div, header, footer, h1, h2, h3, p, img, a {
 }
 
 body {
-	background: #F4F4F4;
+	background: #F4F4F4 url("../imgs/body_bg.png");
 	font-size: 16px;
 	font-family: Arial, sans-serif, cursive;
 	margin: 0;
@@ -149,8 +149,8 @@ header {
 	line-height: 2;
 }
 
-.navigation_menu_item a {
-	color: #666666;
+.navigation_menu_item_link {
+	color: #666666;	
 }
 
 
@@ -159,8 +159,8 @@ header {
 	left: -12px;
 }
 
-.navigation_menu_item a:focus,
-.navigation_menu_item a:hover {
+.navigation_menu_item_link:focus,
+.navigation_menu_item_link:hover {
 	color: #222222;	
 }
 
@@ -200,12 +200,22 @@ header {
 	font-family: Oxygen;
 	color:  #666666;
 	font-size: 12px;
-	padding: 11px 5px;
-	border-bottom: 1px solid #f3f3f3;
+	padding: 8px 5px;
 	line-height: 1;
+	position: relative;
+	margin-top: 10px;
 }
 
-.navigation_menu_item_submenu_item:last-child {
+.navigation_menu_item_submenu_item::after {
+	content: "";
+	border-bottom: solid 1px #f3f3f3;
+	position: absolute;
+	bottom: -5px;
+	left: 5px;
+	right: 5px;
+}
+
+.navigation_menu_item_submenu_item:last-child::after {
 	border-bottom: none;
 }
 
@@ -223,7 +233,7 @@ header {
 
 .button_fun {
 	border-radius: 3px;
-	background-color: #ffc24b;
+	background: linear-gradient(0deg, #F3BA41, #F7C951);
     padding: 2px 7px;
 	font-family: Oxygen;
 	color: #ffffff;
@@ -397,7 +407,7 @@ header {
 	color:  #d28600;
 	font-size: 0.8em;
 	font-weight: 700;	
-	text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 2px 1px rgba(255, 255, 255, 0.5);
 }
 
 .products_jumbotron_content_body_button_icon {
@@ -417,6 +427,7 @@ header {
 
 .section_bottom_line {
 	border-bottom: solid 1px #E3E3E3;
+	box-shadow: 0 1px #E3E3E3;
 }
 
 /* PRODUCT DESCRIPTIONS */
@@ -727,6 +738,7 @@ header {
 
 .additional_info__body_tabs__tab_content_body__links_item {	
 	color:  #333333;
+	position: relative;
 }
 
 .additional_info__body_tabs__tab_content_body__links_item:hover,
@@ -735,15 +747,14 @@ header {
 }
 
 .additional_info__body_tabs__tab_content_body__links_item::before {
-	content:">";
-	font-weight: 700;
-	position: relative;
-	top: 0;
-	left: -10px;
-	color: #CBCBCB;
-	font-size: 7px;
+	content:"";	
+	position: absolute;
+	top: 7;
+	left: -10px;	
+	background: url("../imgs/bul.png") no-repeat;
+	width: 5px;
+	height: 7px;
 }
-
 
 .additional_info__body_tabs__tab_content_body__links_item:hover::before {
 	color: #000;
