@@ -249,7 +249,8 @@ header {
 .button_fun:focus,
 .button_fun:hover {
     border-radius: 10px;
-    transform: scale(1.1, 1.1);
+    background: linear-gradient(0deg, #F3AC41, #F7C951);
+    box-shadow: 0 1px 1px #EDAC24;
 }
 
 .button_fun a:focus,
@@ -749,7 +750,7 @@ header {
 .additional_info__body_tabs__tab_content_body__links_item::before {
     content:"";    
     position: absolute;
-    top: 7;
+    top: 7px;
     left: -10px;    
     background: url("../imgs/bul.png") no-repeat;
     width: 5px;
