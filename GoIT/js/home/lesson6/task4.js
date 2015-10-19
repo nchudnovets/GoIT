@@ -5,7 +5,7 @@ var vovochka = { name: 'Вовочка', age: 6 };
 var people = [ vasya , masha , vovochka ];
 
 people.sort(function(person1, person2){
-  return person1 - person2;
+  return person1.age - person2.age;
 });
 
 
