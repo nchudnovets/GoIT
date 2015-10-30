@@ -1,0 +1,5 @@
+function descendingOrder(n){
+    return parseInt(n.toString().split('').sort(function(a,b){return b-a;}).join(''), 10);
+};
+
+console.log (descendingOrder(1254859723));
