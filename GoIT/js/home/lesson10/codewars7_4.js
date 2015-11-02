@@ -1,7 +1,7 @@
-// not solved till end yet !!!
 
 function pattern(n){
-    var output="";
+    var output = "";
+    var digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
     if (n <= 0){
         return '';
@@ -14,11 +14,14 @@ function pattern(n){
                 output += ' ';
             };
             
-            for (var k = 1; k <= n; k++){  //numbers
-                output += k;
+            for (var k = 1, l = 0; k <= n; k++, l++){  //numbers
+                if(l === digits.length){
+                    l = 0;
+                }                
+                output += digits[l]; 
             };
             
-            for (var l = n-1; l > i-1; l--){  //spaces after numbers
+            for (var m = n-1; m > i-1; m--){  //spaces after numbers
                 output += ' ';
             };
             
@@ -30,4 +33,4 @@ function pattern(n){
     return output.slice(0, -1);
 };
 
-console.log(pattern(5));
+console.log(pattern(13));
