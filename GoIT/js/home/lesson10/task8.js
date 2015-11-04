@@ -14,10 +14,12 @@ function getUniqueClasses (arr) {
         }; 
         
     };
+    console.log(classesObj);
     
     for (var prop in classesObj){
         classes.push({ className: prop, count: classesObj[prop]});
     };
+    console.log(classes);
     
     classes = classes.sort(function(a,b){return a.count < b.count;});
     classes = classes.map(function(obj){return obj.className;});
