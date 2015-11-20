@@ -1,0 +1,1 @@
+this task it is codewars6_5.js from lesson10. Solved there.

@@ -11,6 +11,7 @@ function User(fullName) {
         
         set: function(firstName_new){
             this.fullName = firstName_new + ' ' + this.lastName;
+            splitName = this.fullName.split(' ');
         }    
     },
     
@@ -21,6 +22,7 @@ function User(fullName) {
         
        set: function(lastName_new){
             this.fullName = this.firstName + ' ' + lastName_new;
+            splitName = this.fullName.split(' ');
         }    
      }
     }
@@ -36,3 +38,8 @@ console.log(vasya.firstName);
 console.log(vasya.lastName);
 vasya.firstName = 'Василий';
 console.log(vasya.fullName);
+console.log(vasya.firstName);
+vasya.lastName = 'Frgtfds';
+console.log(vasya.fullName);
+console.log(vasya.firstName);
+console.log(vasya.lastName);

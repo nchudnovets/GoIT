@@ -1,5 +1,3 @@
-// not solved yet
-
 
 var typer = (function(thing) { 
   return {
